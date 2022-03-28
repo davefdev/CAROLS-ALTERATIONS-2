@@ -1,0 +1,67 @@
+
+.footer {
+    background: rgb(255, 187, 0, 1);
+    height: 100%;
+  }
+  
+  .footer .column-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 3fr));
+    gap: 0.5rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    height: 18rem;
+  }
+  
+  .footer .column {
+    margin-top: 1rem;
+  }
+  .footer .column-container .column h3 {
+    font-size: 1.5rem;
+    color: #222;
+    padding: 1rem 0;
+  }
+  
+  .footer .column-container .column p {
+    font-size: 1.1rem;
+    color: rgb(80, 79, 79);
+    padding-bottom: 0.5rem;
+  }
+  
+  .footer .column-container .column a {
+    font-size: 1.1rem;
+    color: rgb(80, 79, 79);
+    padding: 0.3rem 0;
+    display: block;
+  }
+  
+  .footer .column-container .column a:hover {
+    color: rgb(119, 119, 119);
+    transition: all 0.3s ease 0s;
+  }
+  
+  .footer .column-container .column a:hover i {
+    color: rgb(119, 119, 119);
+    padding-right: 2rem;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .footer .column-container .column a i {
+    padding-right: 0.5rem;
+    color: #222;
+  }
+  
+  .footer .column-container .column form input[type="email"] {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.1rem;
+    color: rgb(80, 79, 79);
+    margin: 1rem 0;
+    text-transform: none;
+  }
+  
+  .footer .column-container .column .payment {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
