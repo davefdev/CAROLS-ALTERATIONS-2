@@ -66,6 +66,7 @@ section {
   left: 0;
   right: 0;
   padding: 2rem 9%;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
   z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
