@@ -40,8 +40,9 @@ section {
 .btn {
   margin-top: 1rem;
   display: inline-block;
-  border: 0.2rem solid #10221b;
-  color: #10221b;
+  border: 0.2rem solid #f8f9fa;
+  border-radius: 3rem;
+  color: ##f8f9fa;
   cursor: pointer;
   background: none;
   font-size: 1.7rem;
@@ -77,7 +78,7 @@ section {
 }
 
 .header.active {
-  background: #2d3235;
+  background: rgba(29, 32, 34, 0.6);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -96,12 +97,12 @@ section {
 .header .navbar a {
   margin-left: 2rem;
   font-size: 2rem;
-  color: #fff;
-  font-weight: 500;
+  color: rgba(255, 255, 255, 0.829);
+  font-weight: ;
 }
 
 .header .navbar a:hover {
-  color: grey;
+  color: white;
 }
 
 .header .navbar #nav-close {
@@ -247,19 +248,19 @@ section {
 
 .home .box .content span {
   font-size: 4rem;
-  color: #10221b;
+  color: #fff;
 }
 
 .home .box .content h3 {
   font-size: 6rem;
-  color: #219150;
+  color: #fff;
   padding-top: 0.5rem;
   text-transform: uppercase;
 }
 
 .home .box .content p {
   line-height: 2;
-  color: #10221b;
+  color: #fff;
   font-size: 1.5rem;
   padding: 1rem 0;
 }
@@ -267,7 +268,7 @@ section {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 3rem;
-  color: #10221b;
+  color: #fff;
 }
 
 .category .box-container {
