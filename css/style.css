@@ -3,6 +3,7 @@
 :root {
   --white: #fff;
   --light-grey: #dcdcdc;
+  --bg-mid: ;
   --red: #ec250d;
   --dark: #0e1010;
   --trans: all 0.3s ease-in-out;
@@ -232,8 +233,6 @@ section {
 }
 
 
-
-
 .home {
   padding: 0;
 }
@@ -288,6 +287,82 @@ section {
   font-size: 3rem;
   color: #fff;
 }
+
+/* SERVICES */
+
+.services .services-box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+}
+
+.services .services-box-container .services-box {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #222;
+}
+
+.services .services-box-container .services-box:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.services .services-box-container .services-box .image {
+  height: 20rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.services .services-box-container .services-box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.services .services-box-container .services-box .content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.services .services-box-container .services-box .content h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.services .services-box-container .services-box .content p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+
+.services .services-box-container .services-box .content a {
+  font-size: 1.7rem;
+  color: #29d9d5;
+}
+
+.services .services-box-container .services-box .content a:hover i {
+  padding-left: 1rem;
+}
+
+.services .services-box-container .services-box .content a i {
+  padding-right: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .category .box-container {
   display: -ms-grid;
