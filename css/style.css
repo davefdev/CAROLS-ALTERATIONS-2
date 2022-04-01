@@ -2,8 +2,8 @@
 
 :root {
   --white: #fff;
-  --green: #1ec6b6;
-  --light-grey: #f7f7f7;
+  --light-grey: #dcdcdc;
+  --red: #ec250d;
   --dark: #0e1010;
   --trans: all 0.3s ease-in-out;
 }
@@ -93,25 +93,19 @@ section {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .header.active {
-  background: rgba(29, 32, 34, 0.6);
+  background: rgba(29, 32, 34, 0.9);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .header .logo img {
   margin-right: auto;
-  width: 100px;
-  color: #fff;
-  font-weight: bolder;
-}
-
-.header .logo img {
-  margin-right: auto;
-  width: 100px;
+  width: 50px;
+  height: 50px;
   color: #fff;
   font-weight: bolder;
 }
