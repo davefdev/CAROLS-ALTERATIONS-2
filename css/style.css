@@ -1,13 +1,66 @@
+/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+/*=============== VARIABLES CSS ===============*/
 :root {
+
+  /*========== COLOURS ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --hue: 152;
   --white: #fff;
   --light-grey: #dcdcdc;
-  --bg-mid: ;
+  --first-color-lighten: hsl(var(--hue), 24%, 92%);
+  --bg-mid: #383e3e;
+  --bg-light: #95a6a6;
   --red: #ec250d;
   --dark: #0e1010;
   --trans: all 0.3s ease-in-out;
+  --first-color-lighten: 
+
+  /*========== FONT + TYPOGRAPHY ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== FONT WEIGHT ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== MARGINES BOTTOM ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+
+  /*========== Z INDEX ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
+
+/* Responsive typography */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+
+/*=============== BASE ===============*/
 
 * {
   font-family: "Roboto", sans-serif;
@@ -19,8 +72,8 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 html {
@@ -66,11 +119,11 @@ section {
 .btn .btn-header {
   color: #fff;
   background: #fd5d93;
-  background-image: linear-gradient(to bottom left,#fd5d93,#ec250d,#fd5d93);
+  background-image: linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93);
   background-size: 210% 210%;
   background-position: 100% 0;
   background-color: #fd5d93;
-  transition: all .15s ease;
+  transition: all 0.15s ease;
 }
 
 .heading {
@@ -232,7 +285,6 @@ section {
   color: #219150;
 }
 
-
 .home {
   padding: 0;
 }
@@ -288,14 +340,29 @@ section {
   color: #fff;
 }
 
-/* SERVICES */
+/*=============== SERVICES ===============*/
+
+#services {
+  background-color: var(--bg-mid);
+}
+
+#services .heading {
+  text-align: center;
+  margin-bottom: 4.5rem;
+  font-size: 5rem;
+  color: white;
+}
+
+#services .heading h1 {
+  margin-bottom: rem;
+}
 
 .services .services-box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-  gap: 1.5rem;
+  -ms-grid-columns: (minmax(27rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+  gap: 2.5rem;
 }
 
 .services .services-box-container .services-box {
@@ -306,11 +373,11 @@ section {
 
 .services .services-box-container .services-box:hover img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .services .services-box-container .services-box .image {
-  height: 20rem;
+  height: 25rem;
   overflow: hidden;
   width: 100%;
 }
@@ -319,7 +386,7 @@ section {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .services .services-box-container .services-box .content {
@@ -351,18 +418,6 @@ section {
 .services .services-box-container .services-box .content a i {
   padding-right: 0.5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .category .box-container {
   display: -ms-grid;
@@ -801,6 +856,192 @@ section {
 .clients .silde img {
   height: 12rem;
 }
+
+/*=============== QUESTIONS ===============*/
+.questions {
+  background-color: var(--first-color-lighten);
+}
+
+.questions__container {
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.questions__group {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.questions__item {
+  background-color: var(--container-color);
+  border-radius: 0.25rem;
+}
+
+.questions__item-title {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.questions__icon {
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+.questions__description {
+  font-size: var(--smaller-font-size);
+  padding: 0 1.25rem 1.25rem 2.5rem;
+}
+
+.questions__header {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  padding: 0.75rem 0.5rem;
+  cursor: pointer;
+}
+
+.questions__content {
+  overflow: hidden;
+  height: 0;
+}
+
+.questions__item,
+.questions__header,
+.questions__item-title,
+.questions__icon,
+.questions__description,
+.questions__content {
+  transition: 0.3s;
+}
+
+.questions__item:hover {
+  box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, 0.15);
+}
+
+/*Rotate icon, change color of titles and background*/
+.accordion-open .questions__header,
+.accordion-open .questions__content {
+  background-color: var(--first-color);
+}
+
+.accordion-open .questions__item-title,
+.accordion-open .questions__description,
+.accordion-open .questions__icon {
+  color: #fff;
+}
+
+.accordion-open .questions__icon {
+  transform: rotate(45deg);
+}
+
+
+
+/*=============== CONTACT ===============*/
+.contact__container{
+  row-gap: 3.5rem;
+}
+
+.contact__data{
+  display: grid;
+  row-gap: 2rem;
+}
+
+.contact__subtitle{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+  margin-bottom: var(--mb-0-5);
+}
+
+.contact__description{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.contact__icon{
+  font-size: 1.25rem;
+}
+
+.contact__inputs{
+  display: grid;
+  row-gap: 2rem;
+  margin-bottom: var(--mb-2-5);
+}
+
+.contact__content{
+  position: relative;
+  height: 3rem;
+  border-bottom: 1px solid var(--text-color-light);
+}
+
+.contact__input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1rem 1rem 0;
+  background: none;
+
+  color: var(--text-color);
+
+  
+  border: none;
+  outline: none;
+  z-index: 1;
+}
+
+.contact__label{
+  position: absolute;
+  top: .75rem;
+  width: 100%;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  transition: .3s;
+}
+
+.contact__area{
+  height: 7rem;
+}
+
+.contact__area textarea{
+  resize: none;
+}
+
+/*Input focus move up label*/
+.contact__input:focus + .contact__label{
+  top: -.75rem;
+  left: 0;
+  font-size: var(--smaller-font-size);
+  z-index: 10;
+}
+
+/*Input focus sticky top label*/
+.contact__input:not(:placeholder-shown).contact__input:not(:focus) + .contact__label{
+  top: -.75rem;
+  font-size: var(--smaller-font-size);
+  z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============== FOOTER ===============*/
 
 .footer {
   background: -webkit-gradient(
