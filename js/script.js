@@ -23,6 +23,8 @@ window.onscroll = () => {
 
   if (window.scrollY > 0) {
     document.querySelector(".header").classList.add("active");
+    // document.querySelector(".header").style.borderBottom="red";
+    
   } else {
     document.querySelector(".header").classList.remove("active");
   }
@@ -35,6 +37,11 @@ window.onload = () => {
     document.querySelector(".header").classList.remove("active");
   }
 };
+
+
+
+//SWIPER
+
 
 var swiper = new Swiper(".home-slider", {
   loop: true,

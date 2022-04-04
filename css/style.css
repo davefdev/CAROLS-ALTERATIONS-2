@@ -13,7 +13,7 @@
   --bg-mid: #383e3e;
   --bg-light: #95a6a6;
   --red: #ec250d;
-  --dark: #0e1010;
+  --bg-dark: #0e1010;
   --trans: all 0.3s ease-in-out;
   --first-color-lighten: 
 
@@ -46,7 +46,7 @@
   --z-fixed: 100;
 }
 
-/* Responsive typography */
+/* RESPONSIVE TYPOGRAPHY */
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
@@ -116,13 +116,11 @@ section {
   color: #fff;
 }
 
-.btn .btn-header {
+.btn.btn-header {
   color: #fff;
-  background: #fd5d93;
   background-image: linear-gradient(to bottom left, #fd5d93, #ec250d, #fd5d93);
-  background-size: 210% 210%;
+  /* background-size: 210% 210%; */
   background-position: 100% 0;
-  background-color: #fd5d93;
   transition: all 0.15s ease;
 }
 
@@ -154,6 +152,7 @@ section {
   background: rgba(29, 32, 34, 0.9);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-bottom: #10221b; 
 }
 
 .header .logo img {
@@ -860,7 +859,8 @@ section {
 /*=============== QUESTIONS ===============*/ 
 
 #faqs {
-  background-color: var(--first-color-lighten);
+  background-color: var(--bg-dark);
+  color: var(--white);
 }
 .questions {
   background-color: var(--first-color-lighten);
