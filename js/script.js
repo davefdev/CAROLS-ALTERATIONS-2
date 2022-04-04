@@ -1,3 +1,4 @@
+//HAMBURGER OPENER/CLOSER
 let navbar = document.querySelector(".header .navbar");
 
 document.querySelector("#menu-btn").onclick = () => {
@@ -8,6 +9,9 @@ document.querySelector("#nav-close").onclick = () => {
   navbar.classList.remove("active");
 };
 
+//SEARCH FORM OPENER/CLOSER
+
+
 let searchForm = document.querySelector(".search-form");
 
 document.querySelector("#search-btn").onclick = () => {
@@ -17,6 +21,8 @@ document.querySelector("#search-btn").onclick = () => {
 document.querySelector("#close-search").onclick = () => {
   searchForm.classList.remove("active");
 };
+
+//NAVBAR COLOUR CHANGE ON SCROLL
 
 window.onscroll = () => {
   navbar.classList.remove("active");
