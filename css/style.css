@@ -11,9 +11,12 @@
   --light-grey: #dcdcdc;
   --first-color-lighten: hsl(var(--hue), 24%, 92%);
   --bg-mid: #383e3e;
-  --bg-light: #95a6a6;
+  --bg-light: #5d6363;
   --red: #ec250d;
-  --bg-dark: #0e1010;
+  --light-red: #dc5749;
+  --bg-dark: #252a2a;
+  --bg-darker: #0e1010;
+
   --trans: all 0.3s ease-in-out;
   --first-color-lighten: 
 
@@ -201,6 +204,8 @@ section {
   display: none;
 }
 
+/*===============  SEARCH FORM =============== */
+
 .search-form {
   position: fixed;
   top: 0;
@@ -288,6 +293,8 @@ section {
   color: #219150;
 }
 
+/*===============  HOME =============== */
+
 .home {
   padding: 0;
 }
@@ -346,7 +353,7 @@ section {
 /*=============== SERVICES ===============*/
 
 #services {
-  background-color: var(--bg-mid);
+  background-color: var(--bg-darker);
 }
 
 #services .heading {
@@ -363,13 +370,23 @@ section {
 .services .services-box-container {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (minmax(37rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 3fr));
+  gap: 5rem;
+}
+
+/*
+.services .services-box-container {
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: (minmax(27rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
   gap: 2.5rem;
-}
+} */
 
 .services .services-box-container .services-box {
   border-radius: 1rem;
+
   overflow: hidden;
   background: #222;
 }
@@ -395,6 +412,7 @@ section {
 .services .services-box-container .services-box .content {
   padding: 2rem;
   text-align: center;
+  background: var(--bg-dark);
 }
 
 .services .services-box-container .services-box .content h3 {
@@ -411,7 +429,7 @@ section {
 
 .services .services-box-container .services-box .content a {
   font-size: 1.7rem;
-  color: #29d9d5;
+  color: var(--light-red);
 }
 
 .services .services-box-container .services-box .content a:hover i {
@@ -421,6 +439,8 @@ section {
 .services .services-box-container .services-box .content a i {
   padding-right: 0.5rem;
 }
+
+/*=============== CATEGORY ===============*/
 
 .category .box-container {
   display: -ms-grid;
