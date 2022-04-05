@@ -99,6 +99,8 @@ section {
   padding: 5rem 9%;
 }
 
+/*===============  HEADER =============== */
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -123,6 +125,8 @@ section {
   background-position: 100% 0;
   transition: all 0.15s ease;
 }
+
+
 
 .heading {
   text-align: center;
