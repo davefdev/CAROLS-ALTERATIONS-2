@@ -386,7 +386,7 @@ section {
 } */
 
 .services .services-box-container .services-box {
-  border-radius: 1rem;
+  border-radius: 1.1em; /*changed*/
 
   overflow: hidden;
   background: #222;
