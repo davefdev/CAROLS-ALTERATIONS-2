@@ -353,7 +353,7 @@ section {
 /*=============== SERVICES ===============*/
 
 #services {
-  background-color: var(--bg-darker);
+  background-color: #darkgray;
 }
 
 #services .heading {
@@ -390,6 +390,12 @@ section {
 
   overflow: hidden;
   background: #222;
+
+  transition: box-shadow .3s;
+}
+
+.services-box:hover {
+  box-shadow: 0 0 11px rgba(234, 234, 234, 0.8); 
 }
 
 .services .services-box-container .services-box:hover img {
@@ -440,6 +446,19 @@ section {
 .services .services-box-container .services-box .content a i {
   padding-right: 0.5rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*=============== CATEGORY ===============*/
 
