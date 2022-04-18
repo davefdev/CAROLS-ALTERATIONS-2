@@ -576,6 +576,7 @@ section {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  /*background: rgba(255, 255, 255, 0.2);*/
 }
 
 .shop .slide .image .icons {
