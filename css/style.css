@@ -12,6 +12,7 @@
   --first-color-lighten: hsl(var(--hue), 24%, 92%);
   --bg-mid: #383e3e;
   --bg-light: #5d6363;
+  --blue: #29d9d5;
   --red: #ec250d;
   --light-red: #dc5749;
   --bg-dark: #252a2a;
@@ -179,7 +180,7 @@ section {
 }
 
 .header .navbar a:hover {
-  color: rgba(255, 255, 255, 0.774);
+  color: var(--blue);
 }
 
 .header .navbar #nav-close {
@@ -351,6 +352,115 @@ section {
   font-size: 3rem;
   color: #fff;
 }
+
+
+/*=============== SHOP ==================*/
+
+.shop{
+  background-color:   black;
+}
+
+.shop .slide {
+  border: 0.2rem solid #10221b;
+}
+
+.shop span {
+  text-align: center;
+  color: var(blue);
+  line-height: 2;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.shop h1 {
+  color:#fff;
+}
+.shop p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.shop .slide:hover .image .icons {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.shop .slide .image {
+  position: relative;
+  overflow: hidden;
+  height: 59rem; /*HERE*/
+  width: 100%;
+  border-radius: 15px;
+}
+
+.shop .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  /*background: rgba(255, 255, 255, 0.2);*/
+}
+
+.shop .slide .image .icons {
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  text-align: center;
+  z-index: 10;
+  -webkit-transform: translateY(7rem);
+  transform: translateY(7rem);
+}
+
+.shop .slide .image .icons a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  background: #10221b;
+  color: #fff;
+  margin: 0 0.2rem;
+}
+
+.shop .slide .image .icons a:hover {
+  background: #219150;
+}
+
+.shop .slide .content {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.shop .slide .content h3 {
+  font-size: 2rem;
+  color: #10221b;
+}
+
+.shop .slide .content .price {
+  padding: 1rem 0;
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  color: #219150;
+}
+
+.shop .slide .content .stars i {
+  font-size: 1.7rem;
+  color: #10221b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*=============== SERVICES ==================*/
 
@@ -543,88 +653,6 @@ section {
 
 
 
-
-
-
-/*shop*/
-
-.shop .slide {
-  border: 0.2rem solid #10221b;
-}
-
-.shop p {
-  font-size: 1.5rem;
-  line-height: 2;
-  color: #10221b;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.shop .slide:hover .image .icons {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
-
-.shop .slide .image {
-  position: relative;
-  overflow: hidden;
-  height: 59rem; /*HERE*/
-  width: 100%;
-}
-
-.shop .slide .image img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  /*background: rgba(255, 255, 255, 0.2);*/
-}
-
-.shop .slide .image .icons {
-  width: 100%;
-  position: absolute;
-  bottom: 2rem;
-  left: 0;
-  text-align: center;
-  z-index: 10;
-  -webkit-transform: translateY(7rem);
-  transform: translateY(7rem);
-}
-
-.shop .slide .image .icons a {
-  height: 4.5rem;
-  width: 4.5rem;
-  line-height: 4.5rem;
-  font-size: 1.7rem;
-  background: #10221b;
-  color: #fff;
-  margin: 0 0.2rem;
-}
-
-.shop .slide .image .icons a:hover {
-  background: #219150;
-}
-
-.shop .slide .content {
-  padding: 1rem 0;
-  text-align: center;
-}
-
-.shop .slide .content h3 {
-  font-size: 2rem;
-  color: #10221b;
-}
-
-.shop .slide .content .price {
-  padding: 1rem 0;
-  padding-top: 0.5rem;
-  font-size: 2rem;
-  color: #219150;
-}
-
-.shop .slide .content .stars i {
-  font-size: 1.7rem;
-  color: #10221b;
-}
 
 
 
